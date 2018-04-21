@@ -59,23 +59,20 @@
 								<h3>Project Description</h3>
 							</header>
 							<p class="animate">
-								The purpose of the Space Flight Simulator project is to expose students to STEM related fields through the theme of space flight. Using a roller coaster simulator and custom space mission experience, we aim to teach students about space exploration and fuel their interest in STEM. We hope to create a memorable experience for users that is both entertaining and educational.
+								The purpose of the Space Flight Simulator project is to expose students to STEM related fields through the theme of space flight. Using a full-motion flight simulator and custom space mission adventure, we aim to teach students about space exploration and fuel their interest in STEM. We hope to create a memorable experience for users that is both entertaining and educational.
 							</p>
 							<p class="animate">
-								We are using a MaxFlight VR 2002 roller coaster simulator, a full 2-axis 360-degree motion simulator, as the platform for this project. The MaxFlight simulator also features a 1080p HD projection screen, premium 5.1 surround sound, and fans that simulate wind in the riders' faces. While the simulator is capable of thrilling, adrenaline-enducing speed, safe fun is the top priority and there are numerous and redundant features to ensure the safety of the riders and operators. The simulator includes emergency stop buttons both inside and outside the cabin. If either button is pressed, the ride immediately shuts down, and is reset to allow the riders to exit the cabin. Furthermore, the simulator has multiple sensors, including lift sensors and seat belt sensors, that must be set for the ride to begin and run, else the ride is stopped. 
+								We are using a MaxFlight FS 2000 roller coaster simulator, a full 2-axis 360-degree motion simulator, as the platform for this project. The MaxFlight simulator also features a 1080p HD projection screen, premium 5.1 surround sound, and fans that simulate wind in the riders' faces. While the simulator is capable of thrilling, adrenaline-enducing speed, safe fun is the top priority and there are numerous and redundant features to ensure the safety of the riders and operators. The simulator includes emergency stop buttons both inside and outside the cabin. If either button is pressed, the ride immediately shuts down, and is reset to allow the riders to exit the cabin. Furthermore, the simulator has multiple sensors, including lift sensors and seat belt sensors, that must be set for the ride to begin and run, else the ride is stopped. 
 							</p>
 							<p class="animate">
-								To create a memorable experience, we are developing a one-of-a-kind space game that uses a joystick to allow the riders to pilot the simulation. The space game will have the riders take their ship on a mineral collection mission through the galaxy. While on this mission, the user will face many challenges that will require quick piloting and space combat skills to allow them to succeed. 
+								To create a memorable experience, we have developed a one-of-a-kind space game that uses a joystick to allow the riders to pilot the simulation. The space game has the riders take their ship on a mineral collection mission through the galaxy. While on this mission, the user faces many challenges that require quick piloting and space combat skills to allow them to succeed. 
 							</p>
 							<p class="animate">
-								To control the MaxFlight's motion, the space game will send the ship's pitch and roll angle information via UDP that a custom plugin to XSimulator SimTools will collect and parse. SimTools will then send the translated information to an Arduino microcontroller. The microcontroller will output voltage signals to the simulator's hydraulic motor, controlling its motion.
+								To control the MaxFlight's motion, the space game sends the ship's pitch and roll angle information via UDP that custom translational software receives and decodes. It then re-encondes this data in the format used by the original MaxFlight motor controller software, and sends this data at regular intervals to the motor controller, which moves the machine to the target position in order to match the motion of the game.
 							</p> 
 							<p class="animate">
-								Once the project is complete, it will be presented to students with the help of the Challenger Learning Center of Northern Nevada. In conjunction with their <i>Be The Astronaut</i> program, the Space Flight Simulator project will be placed in the National Automobile Museum in Reno, Nevada for public enjoyment.
+								The project will be presented to students with the help of the Challenger Learning Center of Northern Nevada. In conjunction with their <i>Be The Astronaut</i> program, the Space Flight Simulator project will be placed in the National Automobile Museum in Reno, Nevada for public enjoyment.
 							</p>
-							<footer>
-								
-							</footer>
 						</article>
 					</div>
 				</div>
